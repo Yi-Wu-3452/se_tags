@@ -1,0 +1,678 @@
+2024-06-03 21:29:10,131 - INFO - Scrapy 2.11.2 started (bot: scrapybot)
+2024-06-03 21:29:10,208 - INFO - Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.14393-SP0
+2024-06-03 21:29:31,060 - INFO - Enabled addons:
+[]
+2024-06-03 21:29:31,060 - WARNING - C:\Users\ywu47\se_tags\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-03 21:29:31,117 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-03 21:29:31,126 - INFO - Telnet Password: bd8d90044a1d7161
+2024-06-03 21:29:31,303 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-03 21:29:31,304 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 0.5}
+2024-06-03 21:29:31,813 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-03 21:29:31,829 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-03 21:29:31,829 - INFO - Enabled item pipelines:
+[]
+2024-06-03 21:29:31,829 - INFO - Spider opened
+2024-06-03 21:29:31,844 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:29:31,844 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-03 21:29:32,419 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/resolution/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:32,436 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/speed/info> (referer: https://baidu.com/)
+2024-06-03 21:29:32,807 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/quality/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:33,485 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/health/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:29:33,985 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/material/info> (referer: https://baidu.com/)
+2024-06-03 21:29:34,672 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/fdm/info> (referer: https://baidu.com/)
+2024-06-03 21:29:35,389 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:29:36,071 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/makerbot/info> (referer: https://baidu.com/)
+2024-06-03 21:29:36,764 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/color/info> (referer: https://google.com/)
+2024-06-03 21:29:37,460 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/outdoors/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:38,187 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/surface/info> (referer: https://baidu.com/)
+2024-06-03 21:29:38,750 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/metal-parts/info> (referer: https://baidu.com/)
+2024-06-03 21:29:39,254 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/support-structures/info> (referer: https://baidu.com/)
+2024-06-03 21:29:39,976 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/rafts/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:40,498 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/brims/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:41,263 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/reprap/info> (referer: https://google.com/)
+2024-06-03 21:29:41,866 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cost/info> (referer: https://google.com/)
+2024-06-03 21:29:42,356 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/desktop-printer/info> (referer: https://google.com/)
+2024-06-03 21:29:42,831 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/dual-nozzle/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:43,496 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/software/info> (referer: https://bing.com/)
+2024-06-03 21:29:44,064 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/scanning/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:44,800 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/replacement-parts/info> (referer: https://bing.com/)
+2024-06-03 21:29:45,509 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/rapid-prototyping/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:46,060 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/open-source/info> (referer: https://bing.com/)
+2024-06-03 21:29:46,742 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/replicating-printers/info> (referer: https://bing.com/)
+2024-06-03 21:29:47,375 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pla/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:47,977 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/extrusion/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:29:48,758 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/safety/info> (referer: https://google.com/)
+2024-06-03 21:29:49,072 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/abs/info> (referer: https://google.com/)
+2024-06-03 21:29:49,571 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cooling/info> (referer: https://yandex.com/)
+2024-06-03 21:29:49,880 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/recycling/info> (referer: https://google.com/)
+2024-06-03 21:29:50,559 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/acetone/info> (referer: https://google.com/)
+2024-06-03 21:29:51,172 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/storage/info> (referer: https://bing.com/)
+2024-06-03 21:29:51,609 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament-production/info> (referer: https://yandex.com/)
+2024-06-03 21:29:52,211 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament-quality/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:52,953 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/legal/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:53,506 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slic3r/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:29:54,248 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/microstepping/info> (referer: https://baidu.com/)
+2024-06-03 21:29:54,975 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stepper/info> (referer: https://baidu.com/)
+2024-06-03 21:29:55,724 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/maintenance/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:56,460 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-quality/info> (referer: https://yahoo.com/)
+2024-06-03 21:29:57,073 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-preparation/info> (referer: https://baidu.com/)
+2024-06-03 21:29:57,371 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/food/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:29:58,101 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-material/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:29:58,746 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bricks/info> (referer: https://baidu.com/)
+2024-06-03 21:29:59,314 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3d-models/info> (referer: https://google.com/)
+2024-06-03 21:29:59,885 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slicing/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:00,631 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/g-code/info> (referer: https://yandex.com/)
+2024-06-03 21:30:01,207 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-i3/info> (referer: https://baidu.com/)
+2024-06-03 21:30:01,655 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ramps-1.4/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:02,401 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/kossel/info> (referer: https://bing.com/)
+2024-06-03 21:30:02,878 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/calibration/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:03,382 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/heated-bed/info> (referer: https://baidu.com/)
+2024-06-03 21:30:03,945 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/firmware/info> (referer: https://baidu.com/)
+2024-06-03 21:30:04,419 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/marlin/info> (referer: https://baidu.com/)
+2024-06-03 21:30:04,883 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/extruder/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:05,456 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/electronics/info> (referer: https://google.com/)
+2024-06-03 21:30:06,064 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/support-material/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:06,833 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sls/info> (referer: https://bing.com/)
+2024-06-03 21:30:07,544 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/adhesion/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:07,999 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/warping/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:08,767 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slm/info> (referer: https://google.com/)
+2024-06-03 21:30:09,329 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hotend/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:09,979 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/thermistor/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:10,519 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-i3-rework/info> (referer: https://yandex.com/)
+2024-06-03 21:30:10,881 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wiring/info> (referer: https://google.com/)
+2024-06-03 21:30:11,544 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/switching-power-supply/info> (referer: https://google.com/)
+2024-06-03 21:30:12,322 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/dlp/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:13,053 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/123d-catch/info> (referer: https://yandex.com/)
+2024-06-03 21:30:13,603 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/obj/info> (referer: https://yandex.com/)
+2024-06-03 21:30:14,264 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pet/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:14,899 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker/info> (referer: https://google.com/)
+2024-06-03 21:30:15,581 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/e3d/info> (referer: https://bing.com/)
+2024-06-03 21:30:16,011 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3d-design/info> (referer: https://bing.com/)
+2024-06-03 21:30:16,703 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mightyboard/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:17,444 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pronterface/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:18,250 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/clip/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:18,808 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sla/info> (referer: https://baidu.com/)
+2024-06-03 21:30:19,519 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/octoprint/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:20,071 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/carbon/info> (referer: https://bing.com/)
+2024-06-03 21:30:20,440 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/nozzle/info> (referer: https://google.com/)
+2024-06-03 21:30:21,029 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/smoothing/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:21,755 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/vapor-smoothing/info> (referer: https://yandex.com/)
+2024-06-03 21:30:22,384 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/post-processing/info> (referer: https://google.com/)
+2024-06-03 21:30:23,068 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/printer-building/info> (referer: https://google.com/)
+2024-06-03 21:30:23,724 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/motor/info> (referer: https://baidu.com/)
+2024-06-03 21:30:24,495 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/acceleration/info> (referer: https://google.com/)
+2024-06-03 21:30:24,923 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/python/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:25,540 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/raspberry-pi/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:26,067 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/z-axis/info> (referer: https://google.com/)
+2024-06-03 21:30:26,722 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/nema-17/info> (referer: https://bing.com/)
+2024-06-03 21:30:27,179 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/layer-height/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:27,727 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/z-probe/info> (referer: https://google.com/)
+2024-06-03 21:30:28,316 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/y-axis/info> (referer: https://yandex.com/)
+2024-06-03 21:30:29,011 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mk2a/info> (referer: https://yandex.com/)
+2024-06-03 21:30:29,678 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/multi-material/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:30,347 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/replicator-dual/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:30,951 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/makerware/info> (referer: https://yandex.com/)
+2024-06-03 21:30:31,586 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ventilation/info> (referer: https://bing.com/)
+2024-06-03 21:30:31,846 - INFO - Crawled 99 pages (at 99 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:30:32,258 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/delta/info> (referer: https://bing.com/)
+2024-06-03 21:30:32,985 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mechanics/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:33,455 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cad/info> (referer: https://bing.com/)
+2024-06-03 21:30:33,841 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/infill/info> (referer: https://google.com/)
+2024-06-03 21:30:34,591 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hardware/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:35,278 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/belt/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:35,987 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stability/info> (referer: https://bing.com/)
+2024-06-03 21:30:36,749 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/uv-printer/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:37,147 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/file-formats/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:37,752 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/arduino-mega-2650/info> (referer: https://yandex.com/)
+2024-06-03 21:30:38,330 - DEBUG - Redirecting (302) to <GET https://3dprinting.stackexchange.com/tags/fdm/info> from <GET https://3dprinting.stackexchange.com/tags/fff/info>
+2024-06-03 21:30:39,083 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hbp/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:39,835 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wire-type/info> (referer: https://google.com/)
+2024-06-03 21:30:40,421 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/multi-meter/info> (referer: https://google.com/)
+2024-06-03 21:30:40,997 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/repair/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:41,365 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/delamination/info> (referer: https://bing.com/)
+2024-06-03 21:30:42,090 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/endstop/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:42,788 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mattercontrol/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:43,453 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/fdm/info> (referer: https://yandex.com/)
+2024-06-03 21:30:44,208 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/build-plate/info> (referer: https://google.com/)
+2024-06-03 21:30:44,846 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/heat-management/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:45,179 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/efficiency/info> (referer: https://yandex.com/)
+2024-06-03 21:30:45,619 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/repetier/info> (referer: https://bing.com/)
+2024-06-03 21:30:46,203 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/repetier-host/info> (referer: https://baidu.com/)
+2024-06-03 21:30:46,815 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/simplify3d/info> (referer: https://bing.com/)
+2024-06-03 21:30:47,331 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-strength/info> (referer: https://baidu.com/)
+2024-06-03 21:30:48,081 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/enclosure/info> (referer: https://yandex.com/)
+2024-06-03 21:30:48,432 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/lulzbot/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:49,172 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hdpe/info> (referer: https://bing.com/)
+2024-06-03 21:30:49,700 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/diy-3d-printer/info> (referer: https://yandex.com/)
+2024-06-03 21:30:50,318 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/materialise-magics/info> (referer: https://bing.com/)
+2024-06-03 21:30:50,833 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stepper-driver/info> (referer: https://yandex.com/)
+2024-06-03 21:30:51,237 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-fan/info> (referer: https://google.com/)
+2024-06-03 21:30:51,884 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/vitamins/info> (referer: https://baidu.com/)
+2024-06-03 21:30:52,580 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/metal-printing/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:53,194 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/axis/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:30:53,822 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/troubleshooting/info> (referer: https://baidu.com/)
+2024-06-03 21:30:54,392 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/p3steel/info> (referer: https://yandex.com/)
+2024-06-03 21:30:55,008 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bowden/info> (referer: https://baidu.com/)
+2024-06-03 21:30:55,726 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ptfe-tube/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:56,387 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/fans/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:30:57,100 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/molds/info> (referer: https://yandex.com/)
+2024-06-03 21:30:57,777 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wanhao/info> (referer: https://yahoo.com/)
+2024-06-03 21:30:58,324 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/waste/info> (referer: https://bing.com/)
+2024-06-03 21:30:59,084 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/analysis/info> (referer: https://bing.com/)
+2024-06-03 21:30:59,808 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/openscad/info> (referer: https://yandex.com/)
+2024-06-03 21:31:00,519 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/2d/info> (referer: https://baidu.com/)
+2024-06-03 21:31:01,223 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/extruder-driver/info> (referer: https://yandex.com/)
+2024-06-03 21:31:01,982 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/development/info> (referer: https://bing.com/)
+2024-06-03 21:31:02,544 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wilson/info> (referer: https://google.com/)
+2024-06-03 21:31:03,169 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/grounding/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:03,878 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/usb/info> (referer: https://bing.com/)
+2024-06-03 21:31:04,366 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stl/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:04,998 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/linear-motion/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:05,745 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/freecad/info> (referer: https://yandex.com/)
+2024-06-03 21:31:06,482 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/masking-tape/info> (referer: https://yandex.com/)
+2024-06-03 21:31:07,125 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/serial-connection/info> (referer: https://yandex.com/)
+2024-06-03 21:31:07,251 - ERROR - An error occurred while parsing: 'NoneType' object has no attribute 'strip'
+2024-06-03 21:31:07,720 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ghosting/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:08,418 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cnc/info> (referer: https://bing.com/)
+2024-06-03 21:31:08,976 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bed-leveling/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:09,299 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/microsd/info> (referer: https://yandex.com/)
+2024-06-03 21:31:09,730 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sd/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:10,391 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wade/info> (referer: https://baidu.com/)
+2024-06-03 21:31:11,059 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/scaling/info> (referer: https://bing.com/)
+2024-06-03 21:31:11,777 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flsun-qq/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:12,334 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/voronoi/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:12,770 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bltouch/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:13,541 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/laser/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:14,199 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wi-fi/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:14,800 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/protocol/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:15,501 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pom/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:16,189 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/graphics/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:16,854 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/medical/info> (referer: https://baidu.com/)
+2024-06-03 21:31:17,529 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-x1/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:17,980 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/makerbot-replicator2/info> (referer: https://yandex.com/)
+2024-06-03 21:31:18,589 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-x3/info> (referer: https://google.com/)
+2024-06-03 21:31:19,340 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-p802/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:20,004 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-x5/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:20,734 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/folgertechft-5/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:21,272 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/inductive-sensor/info> (referer: https://baidu.com/)
+2024-06-03 21:31:21,965 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/retraction/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:22,715 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flashforge/info> (referer: https://yandex.com/)
+2024-06-03 21:31:23,232 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pcl/info> (referer: https://google.com/)
+2024-06-03 21:31:23,949 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/resin/info> (referer: https://baidu.com/)
+2024-06-03 21:31:24,510 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/t3d/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:25,256 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/history/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:25,824 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/part-identification/info> (referer: https://baidu.com/)
+2024-06-03 21:31:26,456 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/arduino/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:26,994 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament-choice/info> (referer: https://yandex.com/)
+2024-06-03 21:31:27,599 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/printer-peripheral/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:28,300 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/petg/info> (referer: https://bing.com/)
+2024-06-03 21:31:28,974 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ruggedised-printer/info> (referer: https://baidu.com/)
+2024-06-03 21:31:29,686 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/power-supply/info> (referer: https://google.com/)
+2024-06-03 21:31:30,163 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-failure/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:30,847 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/delta-wasp-2040/info> (referer: https://baidu.com/)
+2024-06-03 21:31:31,364 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/nylon/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:31,845 - INFO - Crawled 194 pages (at 95 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:31:31,952 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ibox-nano/info> (referer: https://baidu.com/)
+2024-06-03 21:31:32,613 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/m3d/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:33,121 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pp/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:33,838 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/101-hero/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:34,111 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/skynet3d/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:34,621 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3dtouch/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:35,311 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/corexy/info> (referer: https://yandex.com/)
+2024-06-03 21:31:35,975 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/alunar-m508/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:36,662 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/duplicator-i3-mini/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:37,141 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/fusion360/info> (referer: https://baidu.com/)
+2024-06-03 21:31:37,704 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flexible/info> (referer: https://yandex.com/)
+2024-06-03 21:31:38,356 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tpu/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:38,898 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tpe/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:39,642 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tmc2130/info> (referer: https://bing.com/)
+2024-06-03 21:31:42,686 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/grabcad-print/info> (referer: https://google.com/)
+2024-06-03 21:31:42,686 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flashforge-adventurer-3/info> (referer: https://baidu.com/)
+2024-06-03 21:31:42,686 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/change-filament/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:42,701 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/geeetech/info> (referer: https://baidu.com/)
+2024-06-03 21:31:42,701 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pva/info> (referer: https://yandex.com/)
+2024-06-03 21:31:43,130 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/terminology/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:43,444 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ceramic-printer/info> (referer: https://baidu.com/)
+2024-06-03 21:31:43,990 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/knowledgebase/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:44,785 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/e-waste/info> (referer: https://baidu.com/)
+2024-06-03 21:31:45,324 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/lead-screw/info> (referer: https://yandex.com/)
+2024-06-03 21:31:45,922 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/full-graphic-smart-controller/info> (referer: https://google.com/)
+2024-06-03 21:31:46,315 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/x-axis/info> (referer: https://baidu.com/)
+2024-06-03 21:31:47,072 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/homing/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:47,769 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ramps/info> (referer: https://yahoo.com/)
+2024-06-03 21:31:48,233 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3d-printerworks/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:49,003 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tinkercad/info> (referer: https://google.com/)
+2024-06-03 21:31:49,646 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bug/info> (referer: https://google.com/)
+2024-06-03 21:31:50,397 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ramps-1.6/info> (referer: https://google.com/)
+2024-06-03 21:31:51,132 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ideamaker/info> (referer: https://yandex.com/)
+2024-06-03 21:31:51,703 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/plastic/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:52,464 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mosfet/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:53,223 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pei/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:53,891 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/chemistry/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:54,584 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pallete-2/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:55,216 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/asa/info> (referer: https://bing.com/)
+2024-06-03 21:31:55,951 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy/info> (referer: https://yandex.com/)
+2024-06-03 21:31:56,527 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/x3g/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:57,362 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-mendel/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:57,746 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker-3/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:58,329 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/anet-a2/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:31:58,589 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker-2/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:31:58,953 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/anet-a6/info> (referer: https://google.com/)
+2024-06-03 21:31:59,635 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/anet-a8/info> (referer: https://bing.com/)
+2024-06-03 21:32:00,337 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filled-pla/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:01,082 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker-cura/info> (referer: https://baidu.com/)
+2024-06-03 21:32:01,766 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flashprint/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:02,501 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flashforge-creator/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:03,070 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/flashforge-finder/info> (referer: https://bing.com/)
+2024-06-03 21:32:03,785 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker-original/info> (referer: https://google.com/)
+2024-06-03 21:32:04,252 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/water-resistance/info> (referer: https://baidu.com/)
+2024-06-03 21:32:04,868 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ezabl/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:05,510 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-maker-select/info> (referer: https://yandex.com/)
+2024-06-03 21:32:06,219 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/glass-bed/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:06,887 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/plotter/info> (referer: https://google.com/)
+2024-06-03 21:32:07,492 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/klipper/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:08,314 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-maker-ultimate/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:08,941 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-select-mini/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:09,484 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-maker-select-plus/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:10,217 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-dual-extrusion/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:10,832 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-mini-delta/info> (referer: https://yandex.com/)
+2024-06-03 21:32:11,176 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/monoprice-maker-architect/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:11,877 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/creality-ender-5/info> (referer: https://google.com/)
+2024-06-03 21:32:12,497 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/creality-ender-3/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:13,207 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/creality-ender-4/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:13,844 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/polyjet-printer/info> (referer: https://google.com/)
+2024-06-03 21:32:14,641 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-research/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:15,112 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pid/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:15,590 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-mmu/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:15,995 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tevo-tarantula/info> (referer: https://google.com/)
+2024-06-03 21:32:16,583 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/anycubic-i3-mega/info> (referer: https://bing.com/)
+2024-06-03 21:32:17,010 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/creality-cr-10/info> (referer: https://bing.com/)
+2024-06-03 21:32:17,656 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hypercube/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:18,376 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/build-surface/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:18,485 - ERROR - An error occurred while parsing: 'NoneType' object has no attribute 'strip'
+2024-06-03 21:32:19,139 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusaslicer/info> (referer: https://bing.com/)
+2024-06-03 21:32:19,749 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/blender/info> (referer: https://yandex.com/)
+2024-06-03 21:32:20,396 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bq-hephestos/info> (referer: https://google.com/)
+2024-06-03 21:32:20,960 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stringing/info> (referer: https://yandex.com/)
+2024-06-03 21:32:21,630 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/direct-drive/info> (referer: https://google.com/)
+2024-06-03 21:32:22,345 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sbs/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:32:23,008 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/belt-printer/info> (referer: https://yahoo.com/)
+2024-06-03 21:32:23,531 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-x5sa/info> (referer: https://yandex.com/)
+2024-06-03 21:32:24,156 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bigtreetech/info> (referer: https://bing.com/)
+2024-06-03 21:32:24,656 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/tronxy-xy-2-pro/info> (referer: https://baidu.com/)
+2024-06-03 21:32:25,392 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/reprap-firmware/info> (referer: https://yandex.com/)
+2024-06-03 21:32:26,143 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/thingiverse/info> (referer: https://google.com/)
+2024-06-03 21:32:26,449 - DEBUG - Crawled (200) <GET https://academia.stackexchange.com/tags/visa/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:32:26,875 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/glue/info> (referer: https://yandex.com/)
+2024-06-03 21:32:27,003 - DEBUG - Crawled (200) <GET https://academia.stackexchange.com/tags/job-search/info> (referer: https://bing.com/)
+2024-06-03 21:32:37,895 - INFO - Scrapy 2.11.2 started (bot: scrapybot)
+2024-06-03 21:32:37,976 - INFO - Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.14393-SP0
+2024-06-03 21:33:01,998 - INFO - Enabled addons:
+[]
+2024-06-03 21:33:01,998 - WARNING - C:\Users\ywu47\se_tags\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-03 21:33:02,051 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-03 21:33:02,069 - INFO - Telnet Password: bad092b547e03072
+2024-06-03 21:33:02,225 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-03 21:33:02,241 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 0.2}
+2024-06-03 21:33:02,718 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-03 21:33:02,718 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-03 21:33:02,718 - INFO - Enabled item pipelines:
+[]
+2024-06-03 21:33:02,718 - INFO - Spider opened
+2024-06-03 21:33:02,733 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:33:02,751 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-03 21:33:03,123 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/resolution/info> (referer: https://google.com/)
+2024-06-03 21:33:03,205 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/speed/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:03,469 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/quality/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:03,729 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/health/info> (referer: https://baidu.com/)
+2024-06-03 21:33:03,938 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/material/info> (referer: https://baidu.com/)
+2024-06-03 21:33:04,088 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/fdm/info> (referer: https://bing.com/)
+2024-06-03 21:33:04,317 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:04,617 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/makerbot/info> (referer: https://bing.com/)
+2024-06-03 21:33:04,852 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/color/info> (referer: https://yandex.com/)
+2024-06-03 21:33:05,119 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/outdoors/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:05,395 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/surface/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:05,662 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/metal-parts/info> (referer: https://google.com/)
+2024-06-03 21:33:05,858 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/support-structures/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:06,130 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/rafts/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:06,439 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/brims/info> (referer: https://bing.com/)
+2024-06-03 21:33:06,685 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/reprap/info> (referer: https://baidu.com/)
+2024-06-03 21:33:06,883 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cost/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:07,163 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/desktop-printer/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:07,459 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/dual-nozzle/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:07,759 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/software/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:08,060 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/scanning/info> (referer: https://google.com/)
+2024-06-03 21:33:08,370 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/replacement-parts/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:08,619 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/rapid-prototyping/info> (referer: https://baidu.com/)
+2024-06-03 21:33:08,847 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/open-source/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:09,048 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/replicating-printers/info> (referer: https://google.com/)
+2024-06-03 21:33:09,307 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pla/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:09,587 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/extrusion/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:09,737 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/safety/info> (referer: https://bing.com/)
+2024-06-03 21:33:10,050 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/abs/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:10,289 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/cooling/info> (referer: https://google.com/)
+2024-06-03 21:33:10,604 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/recycling/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:10,834 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/acetone/info> (referer: https://yandex.com/)
+2024-06-03 21:33:11,119 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/storage/info> (referer: https://baidu.com/)
+2024-06-03 21:33:11,429 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament-production/info> (referer: https://yandex.com/)
+2024-06-03 21:33:11,732 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/filament-quality/info> (referer: https://google.com/)
+2024-06-03 21:33:12,040 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/legal/info> (referer: https://bing.com/)
+2024-06-03 21:33:12,289 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slic3r/info> (referer: https://bing.com/)
+2024-06-03 21:33:12,486 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/microstepping/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:12,633 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/stepper/info> (referer: https://google.com/)
+2024-06-03 21:33:12,911 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/maintenance/info> (referer: https://bing.com/)
+2024-06-03 21:33:13,093 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-quality/info> (referer: https://baidu.com/)
+2024-06-03 21:33:13,353 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-preparation/info> (referer: https://baidu.com/)
+2024-06-03 21:33:13,638 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/food/info> (referer: https://yandex.com/)
+2024-06-03 21:33:13,893 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/print-material/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:14,095 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/bricks/info> (referer: https://google.com/)
+2024-06-03 21:33:14,355 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3d-models/info> (referer: https://bing.com/)
+2024-06-03 21:33:14,638 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slicing/info> (referer: https://google.com/)
+2024-06-03 21:33:14,832 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/g-code/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:15,037 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-i3/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:15,285 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ramps-1.4/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:15,553 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/kossel/info> (referer: https://yandex.com/)
+2024-06-03 21:33:15,831 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/calibration/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:15,962 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/heated-bed/info> (referer: https://bing.com/)
+2024-06-03 21:33:16,262 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/firmware/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:16,508 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/marlin/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:16,768 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/extruder/info> (referer: https://google.com/)
+2024-06-03 21:33:17,024 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/electronics/info> (referer: https://bing.com/)
+2024-06-03 21:33:17,188 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/support-material/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:17,482 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sls/info> (referer: https://yandex.com/)
+2024-06-03 21:33:17,775 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/adhesion/info> (referer: https://yandex.com/)
+2024-06-03 21:33:18,034 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/warping/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:18,325 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/slm/info> (referer: https://bing.com/)
+2024-06-03 21:33:18,593 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/hotend/info> (referer: https://google.com/)
+2024-06-03 21:33:18,886 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/thermistor/info> (referer: https://google.com/)
+2024-06-03 21:33:19,104 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/prusa-i3-rework/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:19,411 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/wiring/info> (referer: https://baidu.com/)
+2024-06-03 21:33:19,579 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/switching-power-supply/info> (referer: https://yandex.com/)
+2024-06-03 21:33:19,885 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/dlp/info> (referer: https://baidu.com/)
+2024-06-03 21:33:20,114 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/123d-catch/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:20,267 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/obj/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:20,587 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pet/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:20,816 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/ultimaker/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:21,013 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/e3d/info> (referer: https://google.com/)
+2024-06-03 21:33:21,290 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/3d-design/info> (referer: https://bing.com/)
+2024-06-03 21:33:21,453 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mightyboard/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:21,733 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/pronterface/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:21,863 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/clip/info> (referer: https://bing.com/)
+2024-06-03 21:33:22,161 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/sla/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:22,423 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/octoprint/info> (referer: https://baidu.com/)
+2024-06-03 21:33:22,674 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/carbon/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:22,866 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/nozzle/info> (referer: https://bing.com/)
+2024-06-03 21:33:23,083 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/smoothing/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:23,228 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/vapor-smoothing/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:23,538 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/post-processing/info> (referer: https://google.com/)
+2024-06-03 21:33:23,739 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/printer-building/info> (referer: https://baidu.com/)
+2024-06-03 21:33:23,999 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/motor/info> (referer: https://baidu.com/)
+2024-06-03 21:33:24,229 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/acceleration/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:24,545 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/python/info> (referer: https://stackoverflow.com/)
+2024-06-03 21:33:24,845 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/raspberry-pi/info> (referer: https://google.com/)
+2024-06-03 21:33:25,056 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/z-axis/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:25,317 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/nema-17/info> (referer: https://yandex.com/)
+2024-06-03 21:33:25,592 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/layer-height/info> (referer: https://baidu.com/)
+2024-06-03 21:33:25,900 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/z-probe/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:26,201 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/y-axis/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:26,478 - DEBUG - Crawled (200) <GET https://3dprinting.stackexchange.com/tags/mk2a/info> (referer: https://yandex.com/)
+2024-06-03 21:33:26,608 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/multi-material/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:26,824 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/replicator-dual/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:27,074 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/makerware/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:27,379 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/ventilation/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:27,611 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/delta/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:27,838 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/mechanics/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:28,103 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/cad/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:28,380 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/infill/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:28,659 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/multi-material/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:28,934 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/replicator-dual/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:29,150 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/makerware/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:29,425 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/ventilation/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:29,690 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/delta/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:29,966 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/mechanics/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:30,143 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/cad/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:30,309 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/infill/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:33:30,555 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/multi-material/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:30,555 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/multi-material/info> (referer: https://yandex.com/)
+2024-06-03 21:33:30,666 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/multi-material/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:30,815 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/replicator-dual/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:30,815 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/replicator-dual/info> (referer: https://yandex.com/)
+2024-06-03 21:33:30,925 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/replicator-dual/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:31,091 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/makerware/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:31,091 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/makerware/info> (referer: https://baidu.com/)
+2024-06-03 21:33:31,200 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/makerware/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:31,404 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/ventilation/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:31,404 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/ventilation/info> (referer: https://duckduckgo.com/)
+2024-06-03 21:33:31,519 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/ventilation/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:31,622 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/delta/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:31,622 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/delta/info> (referer: https://yandex.com/)
+2024-06-03 21:33:31,736 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/delta/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:31,822 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/mechanics/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:31,823 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/mechanics/info> (referer: https://yahoo.com/)
+2024-06-03 21:33:31,938 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/mechanics/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:32,096 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/cad/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:32,096 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/cad/info> (referer: https://baidu.com/)
+2024-06-03 21:33:32,196 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/cad/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:32,347 - ERROR - Gave up retrying <GET https://3dprinting.stackexchange.com/tags/infill/info> (failed 3 times): 429 Unknown Status
+2024-06-03 21:33:32,347 - DEBUG - Crawled (429) <GET https://3dprinting.stackexchange.com/tags/infill/info> (referer: https://bing.com/)
+2024-06-03 21:33:32,451 - INFO - Ignoring response <429 https://3dprinting.stackexchange.com/tags/infill/info>: HTTP status code is not handled or not allowed
+2024-06-03 21:33:32,536 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/hardware/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:32,792 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/belt/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:32,970 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/stability/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:33,230 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/uv-printer/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:33,413 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/file-formats/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:33,544 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/arduino-mega-2650/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:33,686 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/fff/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:33:47,484 - INFO - Scrapy 2.11.2 started (bot: scrapybot)
+2024-06-03 21:33:47,554 - INFO - Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.14393-SP0
+2024-06-03 21:34:08,045 - INFO - Enabled addons:
+[]
+2024-06-03 21:34:08,045 - WARNING - C:\Users\ywu47\se_tags\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-03 21:34:08,087 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-03 21:34:08,122 - INFO - Telnet Password: ac684dc7716a9405
+2024-06-03 21:34:08,307 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-03 21:34:08,307 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'DOWNLOAD_DELAY': 0.5}
+2024-06-03 21:34:08,845 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-03 21:34:08,845 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-03 21:34:08,845 - INFO - Enabled item pipelines:
+[]
+2024-06-03 21:34:08,845 - INFO - Spider opened
+2024-06-03 21:34:08,861 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:34:08,878 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-03 21:34:09,140 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/resolution/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:09,479 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/speed/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:10,082 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/quality/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:10,605 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/health/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:11,240 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/material/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:11,897 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/fdm/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:12,588 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/filament/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:13,081 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/makerbot/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:13,679 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/color/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:14,266 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/outdoors/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:14,856 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/surface/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:15,313 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/metal-parts/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:16,062 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/support-structures/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:34:44,324 - INFO - Scrapy 2.11.2 started (bot: scrapybot)
+2024-06-03 21:34:44,378 - INFO - Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.14393-SP0
+2024-06-03 21:35:05,754 - INFO - Enabled addons:
+[]
+2024-06-03 21:35:05,754 - WARNING - C:\Users\ywu47\se_tags\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-03 21:35:05,818 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-03 21:35:05,851 - INFO - Telnet Password: 0a42b9cba8d65063
+2024-06-03 21:35:06,044 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-03 21:35:06,045 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'DOWNLOAD_DELAY': 0.5}
+2024-06-03 21:35:06,509 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-03 21:35:06,520 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-03 21:35:06,521 - INFO - Enabled item pipelines:
+[]
+2024-06-03 21:35:06,521 - INFO - Spider opened
+2024-06-03 21:35:06,534 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:35:06,534 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-03 21:35:06,792 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/resolution/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:07,229 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/speed/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:07,911 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/quality/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:08,346 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/health/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:09,007 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/material/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:09,502 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/fdm/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:10,228 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/filament/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:10,822 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/makerbot/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:11,545 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/color/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:35:11,956 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/outdoors/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:16,282 - INFO - Scrapy 2.11.2 started (bot: scrapybot)
+2024-06-03 21:37:16,353 - INFO - Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.14393-SP0
+2024-06-03 21:37:37,122 - INFO - Enabled addons:
+[]
+2024-06-03 21:37:37,123 - WARNING - C:\Users\ywu47\se_tags\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-03 21:37:37,160 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-03 21:37:37,200 - INFO - Telnet Password: a64118b306080a8a
+2024-06-03 21:37:37,399 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-03 21:37:37,400 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 0.5}
+2024-06-03 21:37:37,891 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-03 21:37:37,900 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-03 21:37:37,900 - INFO - Enabled item pipelines:
+[]
+2024-06-03 21:37:37,901 - INFO - Spider opened
+2024-06-03 21:37:37,914 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-03 21:37:37,917 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-03 21:37:38,177 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/resolution/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:38,617 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/speed/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:39,032 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/quality/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:39,780 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/health/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:40,275 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/material/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:40,968 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/fdm/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:41,622 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/filament/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:42,152 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/makerbot/info> (failed 1 times): 429 Unknown Status
+2024-06-03 21:37:42,756 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/resolution/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:37:43,475 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/speed/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:37:44,067 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/quality/info> (failed 2 times): 429 Unknown Status
+2024-06-03 21:37:44,659 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/health/info> (failed 2 times): 429 Unknown Status
