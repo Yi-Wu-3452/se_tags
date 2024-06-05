@@ -20,6 +20,9 @@ class MySpider(Spider):
     def __init__(self):
         self.df = pd.read_excel("C:\\Users\\ywu47\\se_tags\\se_tags\\tags_all_info.xlsx", dtype=str)
         self.df.fillna('', inplace=True)
+        self.parsed_df = pd.read_excel("parsed_data.xlsx", dtype=str)
+        self.df = self.df[~self.df[['TagName', 'site']].isin(self.parsed_df[['TagName', 'site']]).all(axis=1)]
+        self.df = self.df[::-1]
         self.df['url'] = self.df.apply(lambda row: f"https://{row.site}.stackexchange.com/tags/{row.TagName}/info", axis=1)
         self.df['p1'] = ''
         self.df['p2'] = ''
@@ -60,7 +63,7 @@ class MySpider(Spider):
 
             self.processed_indices.append(row_index)
 
-            if len(self.processed_indices) >= 10:
+            if len(self.processed_indices) >= 1000:
                 self.save_data()
 
         except Exception as e:

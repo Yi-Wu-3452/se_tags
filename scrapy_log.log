@@ -676,3 +676,531 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
 2024-06-03 21:37:43,475 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/speed/info> (failed 2 times): 429 Unknown Status
 2024-06-03 21:37:44,067 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/quality/info> (failed 2 times): 429 Unknown Status
 2024-06-03 21:37:44,659 - DEBUG - Retrying <GET https://3dprinting.stackexchange.com/tags/health/info> (failed 2 times): 429 Unknown Status
+2024-06-04 18:57:38,589 - INFO - Scrapy 2.11.1 started (bot: scrapybot)
+2024-06-04 18:57:38,786 - INFO - Versions: lxml 5.2.1.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 23.10.0, Python 3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:42:21) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.0.0 (OpenSSL 3.0.13 30 Jan 2024), cryptography 42.0.5, Platform Windows-2019Server-10.0.17763-SP0
+2024-06-04 18:58:00,353 - INFO - Enabled addons:
+[]
+2024-06-04 18:58:00,363 - WARNING - C:\Users\ywu47\.conda\envs\.conda\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-04 18:58:00,378 - DEBUG - Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-04 18:58:00,409 - INFO - Telnet Password: 818f84105521c938
+2024-06-04 18:58:00,657 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-04 18:58:00,657 - INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 0.5}
+2024-06-04 18:58:01,377 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-04 18:58:01,389 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-04 18:58:01,389 - INFO - Enabled item pipelines:
+[]
+2024-06-04 18:58:01,389 - INFO - Spider opened
+2024-06-04 18:58:01,412 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-04 18:58:01,412 - INFO - Telnet console listening on 127.0.0.1:6023
+2024-06-04 18:58:01,820 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/fair-use/info> from <GET https://writers.stackexchange.com/tags/fair-use/info>
+2024-06-04 18:58:02,270 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/rap/info> from <GET https://writers.stackexchange.com/tags/rap/info>
+2024-06-04 18:58:02,854 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/accent/info> from <GET https://writers.stackexchange.com/tags/accent/info>
+2024-06-04 18:58:03,575 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/pronouns/info> from <GET https://writers.stackexchange.com/tags/pronouns/info>
+2024-06-04 18:58:04,044 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/google-docs/info> from <GET https://writers.stackexchange.com/tags/google-docs/info>
+2024-06-04 18:58:04,711 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/medium-platform/info> from <GET https://writers.stackexchange.com/tags/medium-platform/info>
+2024-06-04 18:58:05,428 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/rape/info> from <GET https://writers.stackexchange.com/tags/rape/info>
+2024-06-04 18:58:06,170 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/torture/info> from <GET https://writers.stackexchange.com/tags/torture/info>
+2024-06-04 18:58:06,914 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/fair-use/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:07,045 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:07,447 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/rap/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:07,579 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:07,969 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/accent/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:08,090 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:08,674 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/pronouns/info> (referer: https://bing.com/)
+2024-06-04 18:58:08,805 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:09,017 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/google-docs/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:09,151 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:09,469 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/medium-platform/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:09,603 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:10,107 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/rape/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:10,229 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:10,682 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/torture/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:10,813 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:11,185 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/audience-reaction/info> from <GET https://writers.stackexchange.com/tags/audience-reaction/info>
+2024-06-04 18:58:11,795 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/magic-system/info> from <GET https://writers.stackexchange.com/tags/magic-system/info>
+2024-06-04 18:58:12,515 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/consistency/info> from <GET https://writers.stackexchange.com/tags/consistency/info>
+2024-06-04 18:58:13,146 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/english/info> from <GET https://writers.stackexchange.com/tags/english/info>
+2024-06-04 18:58:13,732 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/plot-structure/info> from <GET https://writers.stackexchange.com/tags/plot-structure/info>
+2024-06-04 18:58:14,482 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/conclusions/info> from <GET https://writers.stackexchange.com/tags/conclusions/info>
+2024-06-04 18:58:14,899 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/racism/info> from <GET https://writers.stackexchange.com/tags/racism/info>
+2024-06-04 18:58:15,604 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/light-novel/info> from <GET https://writers.stackexchange.com/tags/light-novel/info>
+2024-06-04 18:58:16,235 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/audience-reaction/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:16,358 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:16,586 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/magic-system/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:16,724 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:17,358 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/consistency/info> (referer: https://baidu.com/)
+2024-06-04 18:58:17,481 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:18,039 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/english/info> (referer: https://yandex.com/)
+2024-06-04 18:58:18,170 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:18,505 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/plot-structure/info> (referer: https://bing.com/)
+2024-06-04 18:58:18,624 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:19,190 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/conclusions/info> (referer: https://bing.com/)
+2024-06-04 18:58:19,307 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:19,825 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/racism/info> (referer: https://bing.com/)
+2024-06-04 18:58:19,949 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:20,462 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/light-novel/info> (referer: https://baidu.com/)
+2024-06-04 18:58:20,595 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:20,879 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/tutorial/info> from <GET https://writers.stackexchange.com/tags/tutorial/info>
+2024-06-04 18:58:21,548 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/altered-perspective/info> from <GET https://writers.stackexchange.com/tags/altered-perspective/info>
+2024-06-04 18:58:22,182 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/litrpg/info> from <GET https://writers.stackexchange.com/tags/litrpg/info>
+2024-06-04 18:58:22,936 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/scale/info> from <GET https://writers.stackexchange.com/tags/scale/info>
+2024-06-04 18:58:23,446 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/rhetoric/info> from <GET https://writers.stackexchange.com/tags/rhetoric/info>
+2024-06-04 18:58:24,121 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/appendix/info> from <GET https://writers.stackexchange.com/tags/appendix/info>
+2024-06-04 18:58:24,722 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/death/info> from <GET https://writers.stackexchange.com/tags/death/info>
+2024-06-04 18:58:25,426 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/relationships/info> from <GET https://writers.stackexchange.com/tags/relationships/info>
+2024-06-04 18:58:26,142 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/tutorial/info> (referer: https://yandex.com/)
+2024-06-04 18:58:26,255 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:26,796 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/altered-perspective/info> (referer: https://baidu.com/)
+2024-06-04 18:58:26,924 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:27,193 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/litrpg/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:27,333 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:27,928 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/scale/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:28,047 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:28,246 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/rhetoric/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:28,380 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:28,929 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/appendix/info> (referer: https://google.com/)
+2024-06-04 18:58:29,064 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:29,549 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/death/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:29,685 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:30,268 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/relationships/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:30,399 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:31,021 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/mythology/info> from <GET https://writers.stackexchange.com/tags/mythology/info>
+2024-06-04 18:58:31,701 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/snowflake/info> from <GET https://writers.stackexchange.com/tags/snowflake/info>
+2024-06-04 18:58:32,353 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/text-messaging/info> from <GET https://writers.stackexchange.com/tags/text-messaging/info>
+2024-06-04 18:58:32,932 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/epilogues/info> from <GET https://writers.stackexchange.com/tags/epilogues/info>
+2024-06-04 18:58:33,603 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/combat/info> from <GET https://writers.stackexchange.com/tags/combat/info>
+2024-06-04 18:58:34,279 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/cryptography/info> from <GET https://writers.stackexchange.com/tags/cryptography/info>
+2024-06-04 18:58:34,777 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/custom/info> from <GET https://writers.stackexchange.com/tags/custom/info>
+2024-06-04 18:58:35,527 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/teaser/info> from <GET https://writers.stackexchange.com/tags/teaser/info>
+2024-06-04 18:58:36,146 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/mythology/info> (referer: https://bing.com/)
+2024-06-04 18:58:36,266 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:36,513 - DEBUG - Redirecting (302) to <GET https://writing.stackexchange.com/tags/snowflake-method/info> from <GET https://writing.stackexchange.com/tags/snowflake/info>
+2024-06-04 18:58:36,981 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/text-messaging/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:37,099 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:37,883 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/epilogues/info> (referer: https://google.com/)
+2024-06-04 18:58:38,010 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:38,217 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/combat/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:38,347 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:38,917 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/cryptography/info> (referer: https://google.com/)
+2024-06-04 18:58:39,047 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:39,672 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/custom/info> (referer: https://google.com/)
+2024-06-04 18:58:39,788 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:40,338 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/teaser/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:40,459 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:41,108 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/documentation/info> from <GET https://writers.stackexchange.com/tags/documentation/info>
+2024-06-04 18:58:41,458 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/snowflake-method/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:41,579 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:42,026 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/ulysses/info> from <GET https://writers.stackexchange.com/tags/ulysses/info>
+2024-06-04 18:58:42,681 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/constrained-writing/info> from <GET https://writers.stackexchange.com/tags/constrained-writing/info>
+2024-06-04 18:58:43,331 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/profanity/info> from <GET https://writers.stackexchange.com/tags/profanity/info>
+2024-06-04 18:58:44,084 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/food-writing/info> from <GET https://writers.stackexchange.com/tags/food-writing/info>
+2024-06-04 18:58:44,701 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/graphics/info> from <GET https://writers.stackexchange.com/tags/graphics/info>
+2024-06-04 18:58:45,387 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/artwork/info> from <GET https://writers.stackexchange.com/tags/artwork/info>
+2024-06-04 18:58:46,090 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/documentation/info> (referer: https://yandex.com/)
+2024-06-04 18:58:46,224 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:46,669 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/podcast/info> from <GET https://writers.stackexchange.com/tags/podcast/info>
+2024-06-04 18:58:47,292 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/ulysses/info> (referer: https://yandex.com/)
+2024-06-04 18:58:47,408 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:48,025 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/constrained-writing/info> (referer: https://baidu.com/)
+2024-06-04 18:58:48,156 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:48,476 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/profanity/info> (referer: https://google.com/)
+2024-06-04 18:58:48,595 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:49,227 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/food-writing/info> (referer: https://bing.com/)
+2024-06-04 18:58:49,357 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:49,929 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/graphics/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:50,059 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:50,445 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/artwork/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:58:50,573 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:51,079 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/standards/info> from <GET https://writers.stackexchange.com/tags/standards/info>
+2024-06-04 18:58:51,819 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/podcast/info> (referer: https://google.com/)
+2024-06-04 18:58:51,958 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:52,553 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/fairytale/info> from <GET https://writers.stackexchange.com/tags/fairytale/info>
+2024-06-04 18:58:52,908 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/writing-instruments/info> from <GET https://writers.stackexchange.com/tags/writing-instruments/info>
+2024-06-04 18:58:53,592 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/book-cover/info> from <GET https://writers.stackexchange.com/tags/book-cover/info>
+2024-06-04 18:58:53,977 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/roleplaying/info> from <GET https://writers.stackexchange.com/tags/roleplaying/info>
+2024-06-04 18:58:54,510 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/dita/info> from <GET https://writers.stackexchange.com/tags/dita/info>
+2024-06-04 18:58:55,180 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/alternative-history/info> from <GET https://writers.stackexchange.com/tags/alternative-history/info>
+2024-06-04 18:58:56,051 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/standards/info> (referer: https://yandex.com/)
+2024-06-04 18:58:56,167 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:56,468 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/emotions/info> from <GET https://writers.stackexchange.com/tags/emotions/info>
+2024-06-04 18:58:57,085 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/fairytale/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:57,213 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:57,818 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/writing-instruments/info> (referer: https://yahoo.com/)
+2024-06-04 18:58:57,955 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:58,421 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/book-cover/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:58,558 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:59,021 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/roleplaying/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:58:59,142 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:58:59,707 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/dita/info> (referer: https://google.com/)
+2024-06-04 18:58:59,839 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:00,439 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/alternative-history/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:00,562 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:00,909 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/first-time-author/info> from <GET https://writers.stackexchange.com/tags/first-time-author/info>
+2024-06-04 18:59:01,427 - INFO - Crawled 47 pages (at 47 pages/min), scraped 0 items (at 0 items/min)
+2024-06-04 18:59:01,536 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/emotions/info> (referer: https://google.com/)
+2024-06-04 18:59:01,665 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:02,228 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/scapple/info> from <GET https://writers.stackexchange.com/tags/scapple/info>
+2024-06-04 18:59:02,930 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/action/info> from <GET https://writers.stackexchange.com/tags/action/info>
+2024-06-04 18:59:03,530 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/historical-fiction/info> from <GET https://writers.stackexchange.com/tags/historical-fiction/info>
+2024-06-04 18:59:04,102 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/reader-engagement/info> from <GET https://writers.stackexchange.com/tags/reader-engagement/info>
+2024-06-04 18:59:04,834 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/backstory/info> from <GET https://writers.stackexchange.com/tags/backstory/info>
+2024-06-04 18:59:05,506 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/monsters/info> from <GET https://writers.stackexchange.com/tags/monsters/info>
+2024-06-04 18:59:06,231 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/first-time-author/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:06,360 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:06,965 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/resurrections/info> from <GET https://writers.stackexchange.com/tags/resurrections/info>
+2024-06-04 18:59:07,604 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/scapple/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:07,723 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:07,990 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/action/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:08,122 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:08,585 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/historical-fiction/info> (referer: https://baidu.com/)
+2024-06-04 18:59:08,707 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:09,309 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/reader-engagement/info> (referer: https://google.com/)
+2024-06-04 18:59:09,430 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:10,026 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/backstory/info> (referer: https://google.com/)
+2024-06-04 18:59:10,154 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:10,714 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/monsters/info> (referer: https://google.com/)
+2024-06-04 18:59:10,836 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:11,329 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/breaking-the-fourth-wall/info> from <GET https://writers.stackexchange.com/tags/breaking-the-fourth-wall/info>
+2024-06-04 18:59:11,947 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/resurrections/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:12,090 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:12,697 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/dark-fantasy/info> from <GET https://writers.stackexchange.com/tags/dark-fantasy/info>
+2024-06-04 18:59:13,321 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/branching-narrative/info> from <GET https://writers.stackexchange.com/tags/branching-narrative/info>
+2024-06-04 18:59:13,985 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/psychology-of-writing/info> from <GET https://writers.stackexchange.com/tags/psychology-of-writing/info>
+2024-06-04 18:59:14,470 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/errata/info> from <GET https://writers.stackexchange.com/tags/errata/info>
+2024-06-04 18:59:15,191 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/cover-letter/info> from <GET https://writers.stackexchange.com/tags/cover-letter/info>
+2024-06-04 18:59:15,912 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/anthologies/info> from <GET https://writers.stackexchange.com/tags/anthologies/info>
+2024-06-04 18:59:16,514 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/breaking-the-fourth-wall/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:16,630 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:17,262 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/steampunk/info> from <GET https://writers.stackexchange.com/tags/steampunk/info>
+2024-06-04 18:59:17,972 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/dark-fantasy/info> (referer: https://yandex.com/)
+2024-06-04 18:59:18,120 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:18,852 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/branching-narrative/info> (referer: https://yandex.com/)
+2024-06-04 18:59:18,971 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:19,356 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/psychology-of-writing/info> (referer: https://bing.com/)
+2024-06-04 18:59:19,485 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:20,056 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/errata/info> (referer: https://baidu.com/)
+2024-06-04 18:59:20,178 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:20,658 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/cover-letter/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:20,787 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:21,443 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/anthologies/info> (referer: https://google.com/)
+2024-06-04 18:59:21,561 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:22,092 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/foreshadowing/info> from <GET https://writers.stackexchange.com/tags/foreshadowing/info>
+2024-06-04 18:59:22,708 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/steampunk/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:22,838 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:23,401 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/contracts/info> from <GET https://writers.stackexchange.com/tags/contracts/info>
+2024-06-04 18:59:24,029 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/middle-grade/info> from <GET https://writers.stackexchange.com/tags/middle-grade/info>
+2024-06-04 18:59:24,566 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/deus-ex-machina/info> from <GET https://writers.stackexchange.com/tags/deus-ex-machina/info>
+2024-06-04 18:59:25,118 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/programming/info> from <GET https://writers.stackexchange.com/tags/programming/info>
+2024-06-04 18:59:25,746 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/vancouver-system/info> from <GET https://writers.stackexchange.com/tags/vancouver-system/info>
+2024-06-04 18:59:26,102 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/articy-draft/info> from <GET https://writers.stackexchange.com/tags/articy-draft/info>
+2024-06-04 18:59:26,491 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/foreshadowing/info> (referer: https://yandex.com/)
+2024-06-04 18:59:26,614 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:27,250 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/glossaries/info> from <GET https://writers.stackexchange.com/tags/glossaries/info>
+2024-06-04 18:59:27,966 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/contracts/info> (referer: https://baidu.com/)
+2024-06-04 18:59:28,088 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:28,520 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/middle-grade/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:28,652 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:29,074 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/deus-ex-machina/info> (referer: https://yandex.com/)
+2024-06-04 18:59:29,190 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:29,776 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/programming/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:29,893 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:30,509 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/vancouver-system/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:30,639 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:31,142 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/articy-draft/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:31,280 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:31,897 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/specifications/info> from <GET https://writers.stackexchange.com/tags/specifications/info>
+2024-06-04 18:59:32,414 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/glossaries/info> (referer: https://google.com/)
+2024-06-04 18:59:32,542 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:33,100 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/information-architecture/info> from <GET https://writers.stackexchange.com/tags/information-architecture/info>
+2024-06-04 18:59:33,717 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/maintenance/info> from <GET https://writers.stackexchange.com/tags/maintenance/info>
+2024-06-04 18:59:34,435 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/markup-languages/info> from <GET https://writers.stackexchange.com/tags/markup-languages/info>
+2024-06-04 18:59:35,222 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/user-guides/info> from <GET https://writers.stackexchange.com/tags/user-guides/info>
+2024-06-04 18:59:35,856 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/assembly-instructions/info> from <GET https://writers.stackexchange.com/tags/assembly-instructions/info>
+2024-06-04 18:59:36,511 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/automation/info> from <GET https://writers.stackexchange.com/tags/automation/info>
+2024-06-04 18:59:37,213 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/specifications/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:37,333 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:37,861 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/feedback/info> from <GET https://writers.stackexchange.com/tags/feedback/info>
+2024-06-04 18:59:38,566 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/information-architecture/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:38,682 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:39,167 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/maintenance/info> (referer: https://baidu.com/)
+2024-06-04 18:59:39,284 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:39,822 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/markup-languages/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:39,944 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:40,508 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/user-guides/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:40,642 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:41,157 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/assembly-instructions/info> (referer: https://baidu.com/)
+2024-06-04 18:59:41,287 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:41,859 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/automation/info> (referer: https://bing.com/)
+2024-06-04 18:59:41,986 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:42,476 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/versioning/info> from <GET https://writers.stackexchange.com/tags/versioning/info>
+2024-06-04 18:59:43,147 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/feedback/info> (referer: https://bing.com/)
+2024-06-04 18:59:43,276 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:43,849 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/training-materials/info> from <GET https://writers.stackexchange.com/tags/training-materials/info>
+2024-06-04 18:59:44,281 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/administration-guides/info> from <GET https://writers.stackexchange.com/tags/administration-guides/info>
+2024-06-04 18:59:44,983 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/release-notes/info> from <GET https://writers.stackexchange.com/tags/release-notes/info>
+2024-06-04 18:59:45,738 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/software-documentation/info> from <GET https://writers.stackexchange.com/tags/software-documentation/info>
+2024-06-04 18:59:46,371 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/young-author/info> from <GET https://writers.stackexchange.com/tags/young-author/info>
+2024-06-04 18:59:46,903 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/reviewing/info> from <GET https://writers.stackexchange.com/tags/reviewing/info>
+2024-06-04 18:59:47,590 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/versioning/info> (referer: https://google.com/)
+2024-06-04 18:59:47,728 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:48,361 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/autobiography/info> from <GET https://writers.stackexchange.com/tags/autobiography/info>
+2024-06-04 18:59:48,894 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/training-materials/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:49,025 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:49,581 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/administration-guides/info> (referer: https://stackoverflow.com/)
+2024-06-04 18:59:49,693 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:50,035 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/release-notes/info> (referer: https://google.com/)
+2024-06-04 18:59:50,186 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:50,684 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/software-documentation/info> (referer: https://baidu.com/)
+2024-06-04 18:59:50,812 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:51,199 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/young-author/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:51,329 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:51,486 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/reviewing/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:51,618 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:52,038 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/myersbriggs/info> from <GET https://writers.stackexchange.com/tags/myersbriggs/info>
+2024-06-04 18:59:52,856 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/autobiography/info> (referer: https://yahoo.com/)
+2024-06-04 18:59:52,975 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:53,457 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/twist/info> from <GET https://writers.stackexchange.com/tags/twist/info>
+2024-06-04 18:59:54,090 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/labels/info> from <GET https://writers.stackexchange.com/tags/labels/info>
+2024-06-04 18:59:54,676 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/wikipedia/info> from <GET https://writers.stackexchange.com/tags/wikipedia/info>
+2024-06-04 18:59:55,193 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/archetypes/info> from <GET https://writers.stackexchange.com/tags/archetypes/info>
+2024-06-04 18:59:55,881 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/content-strategy/info> from <GET https://writers.stackexchange.com/tags/content-strategy/info>
+2024-06-04 18:59:56,612 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/acronyms/info> from <GET https://writers.stackexchange.com/tags/acronyms/info>
+2024-06-04 18:59:57,299 - DEBUG - Redirecting (302) to <GET https://writing.stackexchange.com/tags/myers-briggs-type-indicator/info> from <GET https://writing.stackexchange.com/tags/myersbriggs/info>
+2024-06-04 18:59:57,802 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/paranormal/info> from <GET https://writers.stackexchange.com/tags/paranormal/info>
+2024-06-04 18:59:58,487 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/twist/info> (referer: https://yandex.com/)
+2024-06-04 18:59:58,609 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:58,989 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/labels/info> (referer: https://duckduckgo.com/)
+2024-06-04 18:59:59,117 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 18:59:59,690 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/wikipedia/info> (referer: https://google.com/)
+2024-06-04 18:59:59,819 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:00,454 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/archetypes/info> (referer: https://yandex.com/)
+2024-06-04 19:00:00,580 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:00,824 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/content-strategy/info> (referer: https://bing.com/)
+2024-06-04 19:00:00,962 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:01,425 - INFO - Crawled 93 pages (at 46 pages/min), scraped 0 items (at 0 items/min)
+2024-06-04 19:00:01,505 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/acronyms/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:00:01,624 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:02,057 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/myers-briggs-type-indicator/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:00:02,181 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:02,680 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/paranormal/info> (referer: https://bing.com/)
+2024-06-04 19:00:02,799 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:03,146 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/breaking-bad-writing-habits/info> from <GET https://writers.stackexchange.com/tags/breaking-bad-writing-habits/info>
+2024-06-04 19:00:03,530 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/excerpt/info> from <GET https://writers.stackexchange.com/tags/excerpt/info>
+2024-06-04 19:00:04,131 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/timelines/info> from <GET https://writers.stackexchange.com/tags/timelines/info>
+2024-06-04 19:00:04,551 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/confusing/info> from <GET https://writers.stackexchange.com/tags/confusing/info>
+2024-06-04 19:00:05,088 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/3-acts/info> from <GET https://writers.stackexchange.com/tags/3-acts/info>
+2024-06-04 19:00:05,637 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/sequel/info> from <GET https://writers.stackexchange.com/tags/sequel/info>
+2024-06-04 19:00:06,254 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/time-management/info> from <GET https://writers.stackexchange.com/tags/time-management/info>
+2024-06-04 19:00:06,978 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/examples/info> from <GET https://writers.stackexchange.com/tags/examples/info>
+2024-06-04 19:00:07,757 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/breaking-bad-writing-habits/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:07,879 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:08,427 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/excerpt/info> (referer: https://bing.com/)
+2024-06-04 19:00:08,557 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:09,129 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/timelines/info> (referer: https://yandex.com/)
+2024-06-04 19:00:09,261 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:09,730 - DEBUG - Redirecting (302) to <GET https://writing.stackexchange.com/tags/clarity/info> from <GET https://writing.stackexchange.com/tags/confusing/info>
+2024-06-04 19:00:10,332 - DEBUG - Redirecting (302) to <GET https://writing.stackexchange.com/tags/3-act-structure/info> from <GET https://writing.stackexchange.com/tags/3-acts/info>
+2024-06-04 19:00:11,188 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/sequel/info> (referer: https://bing.com/)
+2024-06-04 19:00:11,323 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:11,552 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/time-management/info> (referer: https://baidu.com/)
+2024-06-04 19:00:11,689 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:12,322 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/examples/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:12,452 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:12,870 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/protagonist/info> from <GET https://writers.stackexchange.com/tags/protagonist/info>
+2024-06-04 19:00:13,458 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/morality/info> from <GET https://writers.stackexchange.com/tags/morality/info>
+2024-06-04 19:00:14,112 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/data/info> from <GET https://writers.stackexchange.com/tags/data/info>
+2024-06-04 19:00:14,615 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/clarity/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:14,737 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:15,201 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/3-act-structure/info> (referer: https://yandex.com/)
+2024-06-04 19:00:15,317 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:15,680 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/sentence-structure/info> from <GET https://writers.stackexchange.com/tags/sentence-structure/info>
+2024-06-04 19:00:16,304 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/libel/info> from <GET https://writers.stackexchange.com/tags/libel/info>
+2024-06-04 19:00:16,635 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/amazon/info> from <GET https://writers.stackexchange.com/tags/amazon/info>
+2024-06-04 19:00:17,252 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/protagonist/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:17,384 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:17,853 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/morality/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:17,981 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:18,509 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/data/info> (referer: https://bing.com/)
+2024-06-04 19:00:18,628 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:19,026 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/hero/info> from <GET https://writers.stackexchange.com/tags/hero/info>
+2024-06-04 19:00:19,411 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/ghostwriter/info> from <GET https://writers.stackexchange.com/tags/ghostwriter/info>
+2024-06-04 19:00:20,263 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/sentence-structure/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:00:20,393 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:20,918 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/libel/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:21,050 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:21,315 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/amazon/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:21,435 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:22,080 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/haiku/info> from <GET https://writers.stackexchange.com/tags/haiku/info>
+2024-06-04 19:00:22,619 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/prose/info> from <GET https://writers.stackexchange.com/tags/prose/info>
+2024-06-04 19:00:23,284 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/pov/info> from <GET https://writers.stackexchange.com/tags/pov/info>
+2024-06-04 19:00:23,886 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/hero/info> (referer: https://baidu.com/)
+2024-06-04 19:00:24,014 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:24,540 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/ghostwriter/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:00:24,662 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:25,296 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/figures-of-speech/info> from <GET https://writers.stackexchange.com/tags/figures-of-speech/info>
+2024-06-04 19:00:25,812 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/subtext/info> from <GET https://writers.stackexchange.com/tags/subtext/info>
+2024-06-04 19:00:26,363 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/realism/info> from <GET https://writers.stackexchange.com/tags/realism/info>
+2024-06-04 19:00:27,030 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/haiku/info> (referer: https://google.com/)
+2024-06-04 19:00:27,150 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:27,547 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/prose/info> (referer: https://yandex.com/)
+2024-06-04 19:00:27,685 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:28,064 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/pov/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:28,194 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:29,114 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/speechwriting/info> from <GET https://writers.stackexchange.com/tags/speechwriting/info>
+2024-06-04 19:00:29,385 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/showing-telling/info> from <GET https://writers.stackexchange.com/tags/showing-telling/info>
+2024-06-04 19:00:29,800 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/figures-of-speech/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:00:29,916 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:30,422 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/subtext/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:30,549 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:30,992 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/realism/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:31,125 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:31,567 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/capitalization/info> from <GET https://writers.stackexchange.com/tags/capitalization/info>
+2024-06-04 19:00:32,283 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/ethics/info> from <GET https://writers.stackexchange.com/tags/ethics/info>
+2024-06-04 19:00:33,051 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/microsoft-word/info> from <GET https://writers.stackexchange.com/tags/microsoft-word/info>
+2024-06-04 19:00:33,555 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/speechwriting/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:33,688 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:34,256 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/showing-telling/info> (referer: https://yandex.com/)
+2024-06-04 19:00:34,376 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:34,958 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/chapters/info> from <GET https://writers.stackexchange.com/tags/chapters/info>
+2024-06-04 19:00:35,576 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/writer/info> from <GET https://writers.stackexchange.com/tags/writer/info>
+2024-06-04 19:00:36,226 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/phrasing/info> from <GET https://writers.stackexchange.com/tags/phrasing/info>
+2024-06-04 19:00:36,841 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/capitalization/info> (referer: https://yandex.com/)
+2024-06-04 19:00:36,963 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:37,483 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/ethics/info> (referer: https://yandex.com/)
+2024-06-04 19:00:37,614 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:38,212 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/microsoft-word/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:00:38,349 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:38,982 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/numerals/info> from <GET https://writers.stackexchange.com/tags/numerals/info>
+2024-06-04 19:00:39,615 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/subplot/info> from <GET https://writers.stackexchange.com/tags/subplot/info>
+2024-06-04 19:00:40,285 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/chapters/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:40,404 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:41,018 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/writer/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:00:41,145 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:41,395 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/phrasing/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:00:41,535 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:42,074 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/voice/info> from <GET https://writers.stackexchange.com/tags/voice/info>
+2024-06-04 19:00:42,739 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/forewords/info> from <GET https://writers.stackexchange.com/tags/forewords/info>
+2024-06-04 19:00:43,207 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/social-media/info> from <GET https://writers.stackexchange.com/tags/social-media/info>
+2024-06-04 19:00:43,938 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/numerals/info> (referer: https://bing.com/)
+2024-06-04 19:00:44,061 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:44,426 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/subplot/info> (referer: https://baidu.com/)
+2024-06-04 19:00:44,556 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:45,042 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/stakes/info> from <GET https://writers.stackexchange.com/tags/stakes/info>
+2024-06-04 19:00:45,497 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/conflict/info> from <GET https://writers.stackexchange.com/tags/conflict/info>
+2024-06-04 19:00:46,059 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/climax/info> from <GET https://writers.stackexchange.com/tags/climax/info>
+2024-06-04 19:00:46,751 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/voice/info> (referer: https://baidu.com/)
+2024-06-04 19:00:46,886 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:47,084 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/forewords/info> (referer: https://bing.com/)
+2024-06-04 19:00:47,201 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:47,400 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/social-media/info> (referer: https://yandex.com/)
+2024-06-04 19:00:47,547 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:48,179 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/learning/info> from <GET https://writers.stackexchange.com/tags/learning/info>
+2024-06-04 19:00:48,718 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/trends/info> from <GET https://writers.stackexchange.com/tags/trends/info>
+2024-06-04 19:00:49,422 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/stakes/info> (referer: https://google.com/)
+2024-06-04 19:00:49,549 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:49,836 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/conflict/info> (referer: https://bing.com/)
+2024-06-04 19:00:49,989 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:50,538 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/climax/info> (referer: https://yahoo.com/)
+2024-06-04 19:00:50,664 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:51,226 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/copying/info> from <GET https://writers.stackexchange.com/tags/copying/info>
+2024-06-04 19:00:51,836 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/grammar/info> from <GET https://writers.stackexchange.com/tags/grammar/info>
+2024-06-04 19:00:52,526 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/print-on-demand/info> from <GET https://writers.stackexchange.com/tags/print-on-demand/info>
+2024-06-04 19:00:53,169 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/learning/info> (referer: https://bing.com/)
+2024-06-04 19:00:53,298 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:53,915 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/trends/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:00:54,035 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:54,432 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/child-characters/info> from <GET https://writers.stackexchange.com/tags/child-characters/info>
+2024-06-04 19:00:55,104 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/historical/info> from <GET https://writers.stackexchange.com/tags/historical/info>
+2024-06-04 19:00:55,753 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/trademark/info> from <GET https://writers.stackexchange.com/tags/trademark/info>
+2024-06-04 19:00:56,507 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/copying/info> (referer: https://yandex.com/)
+2024-06-04 19:00:56,630 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:57,029 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/grammar/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:00:57,154 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:57,513 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/print-on-demand/info> (referer: https://yandex.com/)
+2024-06-04 19:00:57,633 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:00:58,341 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/narrator/info> from <GET https://writers.stackexchange.com/tags/narrator/info>
+2024-06-04 19:00:58,902 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/chicago-manual-of-style/info> from <GET https://writers.stackexchange.com/tags/chicago-manual-of-style/info>
+2024-06-04 19:00:59,664 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/child-characters/info> (referer: https://google.com/)
+2024-06-04 19:00:59,779 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:00,222 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/historical/info> (referer: https://google.com/)
+2024-06-04 19:01:00,339 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:00,887 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/trademark/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:01:01,029 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:01,424 - INFO - Crawled 142 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2024-06-04 19:01:01,564 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/headlines/info> from <GET https://writers.stackexchange.com/tags/headlines/info>
+2024-06-04 19:01:02,172 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/audiobook/info> from <GET https://writers.stackexchange.com/tags/audiobook/info>
+2024-06-04 19:01:02,884 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/dramatic-writing/info> from <GET https://writers.stackexchange.com/tags/dramatic-writing/info>
+2024-06-04 19:01:03,459 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/narrator/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:01:03,591 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:03,829 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/chicago-manual-of-style/info> (referer: https://yahoo.com/)
+2024-06-04 19:01:03,940 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:04,531 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/introduction/info> from <GET https://writers.stackexchange.com/tags/introduction/info>
+2024-06-04 19:01:05,132 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/press-release/info> from <GET https://writers.stackexchange.com/tags/press-release/info>
+2024-06-04 19:01:05,833 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/theme/info> from <GET https://writers.stackexchange.com/tags/theme/info>
+2024-06-04 19:01:06,420 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/headlines/info> (referer: https://bing.com/)
+2024-06-04 19:01:06,540 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:07,115 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/audiobook/info> (referer: https://bing.com/)
+2024-06-04 19:01:07,237 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:07,749 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/dramatic-writing/info> (referer: https://yandex.com/)
+2024-06-04 19:01:07,883 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:08,140 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/concept/info> from <GET https://writers.stackexchange.com/tags/concept/info>
+2024-06-04 19:01:08,849 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/thriller/info> from <GET https://writers.stackexchange.com/tags/thriller/info>
+2024-06-04 19:01:09,429 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/introduction/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:01:09,549 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:10,162 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/press-release/info> (referer: https://bing.com/)
+2024-06-04 19:01:10,282 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:10,764 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/theme/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:01:10,894 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:11,502 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/comedy/info> from <GET https://writers.stackexchange.com/tags/comedy/info>
+2024-06-04 19:01:12,235 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/horror/info> from <GET https://writers.stackexchange.com/tags/horror/info>
+2024-06-04 19:01:12,751 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/crime/info> from <GET https://writers.stackexchange.com/tags/crime/info>
+2024-06-04 19:01:13,368 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/concept/info> (referer: https://google.com/)
+2024-06-04 19:01:13,488 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:13,869 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/thriller/info> (referer: https://bing.com/)
+2024-06-04 19:01:13,998 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:14,532 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/erotica/info> from <GET https://writers.stackexchange.com/tags/erotica/info>
+2024-06-04 19:01:15,202 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/ap-style/info> from <GET https://writers.stackexchange.com/tags/ap-style/info>
+2024-06-04 19:01:15,889 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/api-documentation/info> from <GET https://writers.stackexchange.com/tags/api-documentation/info>
+2024-06-04 19:01:16,379 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/comedy/info> (referer: https://stackoverflow.com/)
+2024-06-04 19:01:16,497 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:17,010 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/horror/info> (referer: https://bing.com/)
+2024-06-04 19:01:17,132 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:17,449 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/crime/info> (referer: https://yandex.com/)
+2024-06-04 19:01:17,584 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:18,197 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/publisher/info> from <GET https://writers.stackexchange.com/tags/publisher/info>
+2024-06-04 19:01:18,852 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/rhythm/info> from <GET https://writers.stackexchange.com/tags/rhythm/info>
+2024-06-04 19:01:19,387 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/erotica/info> (referer: https://baidu.com/)
+2024-06-04 19:01:19,515 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:19,989 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/ap-style/info> (referer: https://duckduckgo.com/)
+2024-06-04 19:01:20,117 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:20,503 - DEBUG - Crawled (200) <GET https://writing.stackexchange.com/tags/api-documentation/info> (referer: https://google.com/)
+2024-06-04 19:01:20,633 - ERROR - An error occurred while parsing: index 0 is out of bounds for axis 0 with size 0
+2024-06-04 19:01:21,091 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/indexing/info> from <GET https://writers.stackexchange.com/tags/indexing/info>
+2024-06-04 19:01:21,829 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/novella/info> from <GET https://writers.stackexchange.com/tags/novella/info>
+2024-06-04 19:01:22,593 - DEBUG - Redirecting (301) to <GET https://writing.stackexchange.com/tags/grammatical-person/info> from <GET https://writers.stackexchange.com/tags/grammatical-person/info>
